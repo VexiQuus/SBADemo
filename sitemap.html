@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+<title>ABC Company</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/demo/style.css">  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/45f3415061.js" crossorigin="anonymous"></script> 
+  
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+  
+</head>
+
+<body>
+  
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar wheat-bg  w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation     Menu"><i class="fa fa-bars"></i></a>
+      <a href="/demo/index.html" class="w3-bar-item w3-button w3-padding-large mahogany-text">HOME</a>
+      <a href="/demo/index.html#info" class="w3-bar-item w3-button w3-padding-large w3-hide-small mahogany-text">OUR
+        COMPANY</a>
+      <a href="/demo/index.html#product"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small mahogany-text">PRODUCT</a>
+      <a href="/demo/index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small mahogany-text">CONTACT
+        US</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button mahogany-text" title="More">MORE <i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="/demo/faq.html" class="w3-bar-item w3-button mahogany-text">FAQ</a>
+          <a href="/demo/sitemap.html" class="w3-bar-item w3-button mahogany-text">SITEMAP</a>
+          <a href="/demo/cart.html" class="w3-bar-item w3-button mahogany-text">SHOPPING CART</a>
+          <a href="/demo/terms.html" class="w3-bar-item w3-button mahogany-text">TERM</a>
+        </div>
+      </div>
+      <div class=" w3-padding-large w3-hide-small w3-right w3-hover-blue hover">
+      <i class="fa-regular fa-circle-user mahogany-text " onclick="document.getElementById('Log-in').style.display='block'"></i>
+      </div>
+      <a href="/demo/lang.html" class="w3-padding-large w3-hover-green w3-hide-small w3-right"><i
+          class="fa-solid fa-earth-americas mahogany-text"></i></a>
+      <a href="/demo/cart.html" class="w3-padding-large w3-hover-purple w3-hide-small w3-right"><i
+          class="fa-solid fa-cart-shopping mahogany-text"></i></a>
+      <a href="/demojavascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+          class="fa fa-search mahogany-text"></i></a>
+      <a href="/demojavascript:void(0)" class="w3-padding-large ash-grey-bg w3-hide-small w3-right"><i
+          class="fa-solid fa-bell mahogany-text"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block wheat-bg w3-hide w3-hide-large w3-hide-medium w3-top w3-hover-red"
+    style="margin-top:46px">
+    <a href="/demo/index.html#info" class="w3-bar-item w3-button w3-padding-large mahogany-text" onclick="myFunction()">OUR COMPANY</a>
+    <a href="/demo/index.html#product" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCT</a>
+    <a href="/demo/index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT US</a>
+    <a href="/demo/sitemap.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SITEMAP</a>
+    <a href="/demo/faq.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAQ</a>
+  </div>
+
+  <!-- Log-in Modal -->
+  <div id="Log-in" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container wheat-bg mahogany-text w3-center w3-padding-32">
+        <span onclick="document.getElementById('Log-in').style.display='none'"
+          class="w3-button wheat-bg mahogany-text w3-xlarge w3-display-topright w3-hover-red">×</span>
+        <h2 class="w3-wide"><i class="fa-solid fa-user w3-margin-right"> Log In</i></h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa-solid fa-id-card"></i> User Name</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="User Name/Email">
+        <p><label><i class="fa-solid fa-key"></i> Password</label></p>
+        <input class="w3-input w3-border" type="password" placeholder="Password">
+        <a href="/demo/index.html"><button class="w3-button w3-block wheat-bg mahogany-text w3-padding-16 w3-section w3-right">Log In<i class="fa fa-check"></i></button></a>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('Log-in').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Haven't got a account?<a href="/demo/create.html" class="w3-text-blue"> Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  
+  <div>
+    <h1 id="tittle">Site Map</h1>
+    <h2 id="sub">The Site Guide For you</h2>
+  </div>
+  
+  <div class="row">
+    
+    <div class="wordWrap column left" id="sub_content">
+        PAGES:
+        <a href="/demo/index.html">HOME PAGE</a>
+        <a href="/demo/index.html#info">COMPANY INFO</a>
+        <a href="/demo/index.html#product">PRODUCT</a>
+        <a href="/demo/faq.html">FAQ</a>
+        <a href="/demo/index.html#contact">CONTACT US</a>
+        <a href="/demo/terms.html">Our Term</a>
+        <a href="/demo/lang.html">Language</a>
+        <a href="/demo/account.html">Log In</a>
+        <a href="/demo/create.html">Sign Up</a>
+      </div>
+    
+      <div class="wordWrap column right" id="sub_content">
+        PRODUCT:
+        <a href="/demo/index.html#product">Work Chairs</a>
+        <a href="/demo/index.html#product">Dining Stools</a>
+        <a href="/demo/index.html#product">Dining chairs</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
